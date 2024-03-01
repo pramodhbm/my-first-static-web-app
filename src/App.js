@@ -1,8 +1,9 @@
 import React from 'react';
 
-function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
+function App(props) {
+  const firstName = props.user.firstName;
+  const lastName = props.user.lastName;
+  return <div>Hello {firstName} {lastName}</div>;
 }
 
 export default App;
