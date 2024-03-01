@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App(props) {
   const [data, setData] = useState('');
@@ -12,7 +12,7 @@ function App(props) {
 
   const firstName = props.user.firstName;
   const lastName = props.user.lastName;
-  return <div>Hello {firstName} {lastName}. {text}</div>;
+  return <div>Hello {firstName} {lastName}. {data}</div>;
 }
 
 export default App;
